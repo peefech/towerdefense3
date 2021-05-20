@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\khapov\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\khapov\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_SimpleTower.-1683328.00" t="ExcludeRecursive" />
+    <e p="C:\workspace\SimpleTower" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Packages" t="Include">
+          <e p="C5.2.5.3" t="Include">
+            <e p="lib" t="Include">
+              <e p="netstandard1.0" t="Include">
+                <e p="C5.xml" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="FluentAssertions.5.10.3" t="Include">
+            <e p="lib" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="FluentAssertions.xml" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Microsoft.NETCore.Platforms.1.1.0" t="Include">
+            <e p="dotnet_library_license.txt" t="Include" />
+            <e p="ThirdPartyNotices.txt" t="Include" />
+          </e>
+          <e p="NETStandard.Library.1.6.1" t="Include">
+            <e p="dotnet_library_license.txt" t="Include" />
+            <e p="ThirdPartyNotices.txt" t="Include" />
+          </e>
+          <e p="System.Configuration.ConfigurationManager.4.4.0" t="Include">
+            <e p="useSharedDesignerContext.txt" t="Include" />
+            <e p="version.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="ArrayExtensions.cs" t="Include" />
+          <e p="CameraExtensions.cs" t="Include" />
+          <e p="Components" t="Include">
+            <e p="MonsterComponent.cs" t="Include" />
+            <e p="TargetComponent.cs" t="Include" />
+            <e p="TransformComponent.cs" t="Include" />
+          </e>
+          <e p="Controllers" t="Include">
+            <e p="CameraController.cs" t="Include" />
+            <e p="GameController.cs" t="Include" />
+            <e p="GameStateController.cs" t="Include" />
+            <e p="SpawnController.cs" t="Include" />
+          </e>
+          <e p="Core" t="Include">
+            <e p="Graph" t="Include">
+              <e p="DistanceToTargetNodeComparer.cs" t="Include" />
+              <e p="Graph.cs" t="Include" />
+              <e p="INode.cs" t="Include" />
+            </e>
+            <e p="MapDto" t="Include">
+              <e p="MapGround.cs" t="Include" />
+              <e p="Team.cs" t="Include" />
+              <e p="Tile.cs" t="Include" />
+              <e p="Tiles" t="Include">
+                <e p="Brick.cs" t="Include" />
+                <e p="Ground.cs" t="Include" />
+              </e>
+              <e p="TileType.cs" t="Include" />
+            </e>
+          </e>
+          <e p="EntityFactoryDto" t="Include">
+            <e p="EntityCreateOptions.cs" t="Include" />
+            <e p="EntityFactory.cs" t="Include" />
+            <e p="EntityType.cs" t="Include" />
+          </e>
+          <e p="Geometry.cs" t="Include" />
+          <e p="MapGenerator.cs" t="Include" />
+          <e p="ResourceLoader.cs" t="Include" />
+          <e p="VectorExtensions.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="SimpleTower.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
