@@ -1,4 +1,5 @@
-﻿using Core.MapDto;
+﻿using System.Linq;
+using Core.MapDto;
 using Core.MapDto.Tiles;
 using DefaultNamespace;
 using EntityFactoryDto;
@@ -17,13 +18,13 @@ namespace Controllers
             
             gameStateController = GameObject.Find(nameof(GameStateController))?.GetComponent<GameStateController>();
 
-            Map = MapGenerator.Generate();
+            Map = MapGenerator.Generate(block, ground);
             
             gameStateController.AddEntity(EntityFactory.CreateTarget(new EntityCreateOptions
             {
                 Damage = 0,
                 Health = 1,
-                Position = new Vector2(16, 6),
+                Position = new Vector2(14.5f, 8.5f),
                 EntityType = EntityType.Target
             }));
         }
@@ -46,5 +47,6 @@ namespace Controllers
         private GameStateController gameStateController;
 
         [SerializeField] private Tilemap block;
+        [SerializeField] private Tilemap ground;
     }
 }
