@@ -61,7 +61,9 @@ namespace Core.MapDto
 
         private bool CanPass(Vector2Int vec)
         {
-            return vec.x >= 0 && vec.x < Width && vec.y >= 0 && vec.y < Height && Tiles.ValueAt(vec).Passable;
+            if (Tiles.ValueAt(vec) == null)
+                ;
+                return vec.x >= 0 && vec.x < Width && vec.y >= 0 && vec.y < Height && Tiles.ValueAt(vec).Passable;
         }
 
         private bool IsDiagonalNeighbour(Vector2Int end, Vector2Int start)
