@@ -56,7 +56,7 @@ namespace Core.MapDto
 
         protected override IComparer<Tile> CreateComparer(params Tile[] args)
         {
-            return new DistanceToTargetNodeComparer(args.Single());
+            return new EmptyComparer();
         }
 
         private bool CanPass(Vector2Int vec)
@@ -69,6 +69,14 @@ namespace Core.MapDto
             return CanPass(end)
                    && Tiles.ValueAt(new Vector2Int(end.x, start.y)).Passable
                    && Tiles.ValueAt(new Vector2Int(start.x, end.y)).Passable;
+        }
+
+        public class EmptyComparer : IComparer<Tile>
+        {
+            public int Compare(Tile x, Tile y)
+            {
+                return 0;
+            }
         }
     }
 }

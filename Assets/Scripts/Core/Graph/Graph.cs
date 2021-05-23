@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using C5;
 
 namespace Core.Graph
@@ -16,12 +18,12 @@ namespace Core.Graph
         public TNode[] GetPath(TNode start, TNode end)
         {
             var visited = new System.Collections.Generic.HashSet<TNode>(new[] {start});
-            var queue = new IntervalHeap<TNode>(CreateComparer(end)) {start};
+            var queue = new Queue<TNode>(new []{start});
             var parents = new Dictionary<TNode, TNode>();
 
             while (queue.Count > 0)
             {
-                var current = queue.DeleteMin();
+                var current = queue.Dequeue();
                 foreach (var neighbour in GetNeighbours(current))
                 {
                     if (visited.Contains(neighbour)) continue;
@@ -40,7 +42,7 @@ namespace Core.Graph
                         return result.ToArray();
                     }
 
-                    queue.Add(neighbour);
+                    queue.Enqueue(neighbour);
                     visited.Add(neighbour);
                 }
 
