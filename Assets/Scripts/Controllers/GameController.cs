@@ -24,7 +24,7 @@ namespace Controllers
             {
                 Damage = 0,
                 Health = 1,
-                Position = new Vector2(18.5f, 8.5f),
+                Position = new Vector2(14.5f, 8.5f),
                 EntityType = EntityType.Target
             }));
         }
